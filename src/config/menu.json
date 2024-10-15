@@ -1,0 +1,48 @@
+{
+  "main": [
+    {
+      "name": "Home",
+      "url": "#home"
+    },
+    {
+      "name": "Feature",
+      "url": "#feature"
+    },
+    {
+      "name": "Testimonial",
+      "url": "#testimonial"
+    },
+    {
+      "name": "Pricing",
+      "url": "#pricing"
+    },
+    {
+      "name": "Contact",
+      "url": "#contact"
+    }
+  ],
+
+  "footer": [
+    {
+      "name": "Home",
+      "url": "#home"
+    },
+    {
+      "name": "Feature",
+      "url": "#feature"
+    },
+    {
+      "name": "Testimonial",
+      "url": "#testimonial"
+    },
+    {
+      "name": "Pricing",
+      "url": "#pricing"
+    },
+    {
+      "name": "Contact",
+      "url": "#contact"
+    }
+  ]
+}
+

@@ -1,0 +1,36 @@
+---
+// PricingSection.astro
+import PageHeader from "@/components/PageHeader.astro";
+import Shape from "@/components/Shape.astro";
+import Faq from "@/layouts/function-components/Faq.jsx";
+import PricingCard from "@/layouts/function-components/PricingCard.jsx";
+import { getEntryBySlug } from "astro:content";
+
+const pricing = await getEntryBySlug("pricing", "index");
+const page_data = {
+  ...pricing.data,
+  content: pricing.body,
+};
+---
+
+<!-- <section id="pricing" class="page-hero pb-14 pt-16">
+  <div class="container">
+    
+  </div>
+</section> -->
+
+<!-- pricing -->
+<section id="pricing" class="section pb-14 pt-16">
+  <PageHeader page_data={page_data} />
+  <div class="container mt-6">
+    <div class="row lg:px-10">
+      {
+        pricing.data.pricing_card.map((item: any, i: number) => (
+          <PricingCard item={item} client:load />
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<Faq client:load data={pricing.data} />
